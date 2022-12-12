@@ -13,6 +13,8 @@ spec:
   template:
     metadata:
       name: '{{cluster}}-guestbook'
+      labels:
+        app: guestbook
     spec:
       project: default
       source:

@@ -8,10 +8,10 @@ spec:
   template:
     metadata:
       name: '{{name}}-guestbook'
-    spec:
       labels:
         app: guestbook
         generators-type: cluster
+    spec:
       project: "default"
       source:
         repoURL: https://github.com/argoproj/argocd-example-apps/

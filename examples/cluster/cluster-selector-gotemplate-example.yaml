@@ -8,7 +8,7 @@ spec:
       selector:
         matchLabels:
           staging: "true"
-  goTemplate: "true"
+  goTemplate: true
   template:
     metadata:
       name: '{{.nameNormalized}}-guestbook'

@@ -7,11 +7,11 @@ spec:
   - clusters: 
       selector:
         matchLabels:
-          staging: true
-  goTemplate: true
+          staging: "true"
+  goTemplate: "true"
   template:
     metadata:
-      name: '{{nameNormalized}}-guestbook'
+      name: '{{.nameNormalized}}-guestbook'
       labels:
         app: guestbook
         generators-type: cluster
@@ -22,5 +22,5 @@ spec:
         targetRevision: HEAD
         path: guestbook
       destination:
-        server: '{{server}}'
+        server: '{{.server}}'
         namespace: guestbook

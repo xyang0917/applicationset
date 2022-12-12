@@ -7,7 +7,7 @@ spec:
   - clusters: {}
   template:
     metadata:
-      name: '{{name}}-guestbook'
+      name: '{{nameNormalized}}-guestbook'
       labels:
         app: guestbook
         generators-type: cluster

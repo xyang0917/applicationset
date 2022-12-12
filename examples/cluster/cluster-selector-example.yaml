@@ -7,7 +7,7 @@ spec:
   - clusters: 
       selector:
         matchLabels:
-          staging: true
+          staging: "true"
   template:
     metadata:
       name: '{{nameNormalized}}-guestbook'
